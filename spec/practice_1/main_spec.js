@@ -1,10 +1,10 @@
 "use strict";
-import chai from "chai";
-import sinonChai from "sinon-chai";
+const chai = require("chai");
+const sinonChai = require("sinon-chai");
 const expect = chai.expect;
 chai.use(sinonChai);
 
-import Person from "../../src/practice_1/person.js";
+const Person = require("../../src/practice_1/person.js");
 
 describe("Person", () => {
     it("should have field name and age", () => {

@@ -51,7 +51,7 @@ describe("Person", () => {
                 klass.assignLeader(student);
                 const introduce = student.introduce();
 
-                expect(introduce).to.equal("My name is Tom. I am 21 years old. I am a Student. I am Leader of Class 2.");            
+                expect(introduce).to.equal("My name is Tom. I am 21 years old. I am a Student. I am Leader of Class 2.");
             });
         });
     });

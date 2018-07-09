@@ -161,7 +161,7 @@ describe("Class", () => {
             expect(console.log).to.be.calledWith("It is not one of us.");
         });
 
-        it("should notify assign leader listeners", () => {
+        it("should notify assign leader newLeaderlisteners", () => {
             const klass = new Class(2);
             const otherKlass = new Class(3);
             const student = new Student(1, "Jerry", 21, klass);
@@ -188,7 +188,7 @@ describe("Class", () => {
             expect(student.klass).to.equal(klass);
         });
 
-        it("should notify join listeners", () => {
+        it("should notify join newLeaderlisteners", () => {
             const klass = new Class(2);
             const otherKlass = new Class(3);
             const teacher = new Teacher(1, "Tom", 21, [klass, otherKlass]);

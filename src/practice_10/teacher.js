@@ -23,6 +23,7 @@ class Teacher extends Person{
         return this.klasses.find(klass => klass.isIn(student)) ? true : false;
     }
 
+
 }
 
 module.exports = Teacher;
